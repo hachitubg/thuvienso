@@ -1,0 +1,26 @@
+Những lưu ý khi chạy project:
+
+1. Tìm hiểu ký các câu lệnh để có thể chạy lên được 1 project.
+
+   Ví dụ:
+      + Lệnh chạy project : php artisan serve 
+      + Kiểm tra xem đã mở môi trường trên xampp chưa
+
+2. Khi mở các trang có thể bị mất các css, js  hoặc bản đồ ...
+   
+   + Cách xử lý: Cần phải bật mạng thì mới có thể có được css, bản đồ... vì mình lấy những cái đó trên mạng internet.
+
+
+==============================================================
+Tải xuống xampp
+Coppy thư mục vào thư mục trong htdocs.
+C:\xampp\htdocs\quanlythuvien
+
+Chạy các câu lệnh sau để clear cache:
+php artisan config:cache
+php artisan cache:clear
+php artisan route:clear
+php artisan view:clear
+
+Câu lệnh chạy project:
+php artisan serve
